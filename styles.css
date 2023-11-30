@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+  font-family: "Poppins";
+    background-image: url('images/bckgnd1.jpg');
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* font-weight: bold; */
+    background-repeat: no-repeat;
+    color: #000000;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    gap: 10px;
+
+}
+
+.sun-icon {
+    opacity: 0.5;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+#geolocationBtn, #searchBtn {
+    background-color: #cac8c800;
+    border: 1px solid #ffffff2e;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    padding: 6px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    margin: 10px 2px;
+    cursor: pointer;
+    box-shadow: rgba(120, 120, 120, 0.107) 2px 2px;
+    transition: background-color 0.5s ease;
+}
+
+#geolocationBtn:hover, #searchBtn:hover {
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+
+#locationSearch {
+    max-width: 100%; 
+    padding: 6px 10px; 
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff2e;
+    border-radius: 6px;
+    font-size: 16px;
+    font-style: oblique;
+    background-color: #00000000;
+    color: #000000;
+    box-shadow: rgba(120, 120, 120, 0.107) 2px 2px;
+}
+
+#searchRow {
+    display: flex;
+    align-items: center;
+}
+
+#dashboard {
+    display: flex;
+    flex-wrap: wrap;
+   max-width: 100%;
+   justify-content: space-between;
+   align-items: center;
+    margin-top: 20px;
+}
+
+#today, #tomorrow {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #fffefe24;
+    border-left-width: 0;
+    backdrop-filter: blur(100px);
+    backdrop-filter: brightness(100%);
+    border-radius: 10px;
+    box-shadow: rgba(120, 120, 120, 0.107) 4px 4px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+#today:hover, #tomorrow:hover {
+    box-shadow: rgba(120, 120, 120, 0.107) 0px 0px;
+    backdrop-filter: blur(0px);
+    backdrop-filter: brightness(105%);
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+}
+
+.sun-data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 15px;
+}
+
+.sun-data div {
+    text-align: center;
+    margin: 15px;
+    flex: 1; 
+}
+
+#dateToday, #dateTomorrow {
+    text-align: center;
+    color: #000000;
+}
+
+#sunriseToday, #sunsetToday, #sunriseTomorrow, #sunsetTomorrow {
+    margin-top: 5px; 
+    color: #000000;
+}
+
+
+h2 {
+    margin-top: 0;
+    color: #000000;
+    text-align: center;
+    font-weight:400;
+}
+h1{
+    font-weight:500;
+    margin-top: 1em;
+    text-align: center;
+    color: #000000;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        position:relative;
+        height: 150vh;
+        width: 100%;
+    }
+    #dashboard {
+        flex-direction: column;
+    }
+
+}
+
+.location{
+    width: 500px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #fffefe24;
+    border-left-width: 0;
+    box-shadow: rgba(120, 120, 120, 0.107) 4px 4px;
+}
+
+
+footer{
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 250px;
+    position:static;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.235);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+
+p{
+    color: black;
+}
+
+
+

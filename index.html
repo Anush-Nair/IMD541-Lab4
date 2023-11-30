@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sunrise Sunset Dashboard</h1>
+        <button id="geolocationBtn">Use Current Location</button>
+        <div id="searchRow">
+            <input type="text" id="locationSearch" placeholder="Search for a location">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="dashboard">
+            <!-- Today's Data -->
+            <div id="today">
+                <h2>Today</h2>
+                <p id="dateToday"></p>
+        
+                <div class="sun-data">
+                    <div>
+                        <h3>Sunrise</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunrise.svg" alt="Graphic: sunrise symbol" aria-hidden="true">
+                        <div id="sunriseToday"></div>
+                    </div>
+            
+                    <div>
+                        <h3>Sunset</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunset.svg" alt="Graphic: sunset symbol" aria-hidden="true">
+                        <div id="sunsetToday"></div>
+                    </div>
+                </div>
+                <br>
+                <p id="dawnToday">Dawn: </p>
+                <br>
+                <p id="duskToday">Dusk: </p>
+                <br>
+                <p id="dayLengthToday">Day Length: </p>
+                <br>
+                <p id="solarNoonToday">Solar Noon: </p>
+            </div>
+            <!-- Tomorrow's Data -->
+            <div id="tomorrow">
+                <h2>Tomorrow</h2>
+                <p id="dateTomorrow"></p>
+        
+                <div class="sun-data">
+                    <div>
+                        <h3>Sunrise</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunrise.svg" alt="Graphic: sunrise symbol" aria-hidden="true">
+                        <div id="sunriseTomorrow"></div>
+                    </div>
+        
+                    <div>
+                        <h3>Sunset</h3>
+                        <img width="128" height="128" class="sun-icon" src="images/sunset.svg" alt="Graphic: sunset symbol" aria-hidden="true">
+                        <div id="sunsetTomorrow"></div>
+                    </div>
+                </div>
+                <br>
+                <p id="dawnTomorrow">Dawn: </p>
+                <br>
+                <p id="duskTomorrow">Dusk: </p>
+                <br>
+                <p id="dayLengthTomorrow">Day Length: </p>
+                <br>
+                <p id="solarNoonTomorrow">Solar Noon: </p>
+            </div>
+        </div>
+        <div class="location">
+        <p id="location">Location</p>
+        <br>
+        <p id="coordinates">Coordinates</p>
+        <br>
+        <p id="timezone">Timezone</p>
+        </div>
+        
+        
+    </header>
+
+    <footer>
+        <p>Coordinates Data provided by <a href="https://geocode.maps.co/">Geolocation API</a></p>
+        <p> Anush B Nair</p>
+        <p>Sunrisesunset Data provided by <a href="https://sunrisesunset.io/api/">Sunrise Sunset API</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
